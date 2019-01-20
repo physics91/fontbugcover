@@ -15,10 +15,10 @@ import kotlin.properties.Delegates
 abstract class CoveredLabeled : SwingNode() {
 
     val jLabel = JLabel()
-    private var text: String by Delegates.observable("") { _, _, newValue ->
+    var text: String by Delegates.observable("") { _, _, newValue ->
         jLabel.text = newValue
     }
-    private var textStyle: FontWeight by Delegates.observable(FontWeight.NORMAL) { _, _, nv ->
+    var textStyle: FontWeight by Delegates.observable(FontWeight.NORMAL) { _, _, nv ->
         textStyleForm(nv)
     }
 
