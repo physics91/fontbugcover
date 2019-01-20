@@ -31,8 +31,8 @@ abstract class CoveredLabeled : SwingNode() {
     private fun textStyleForm(textStyle: FontWeight) {
         val f = jLabel.font
         when (textStyle) {
-            FontWeight.NORMAL -> jLabel.font = f.deriveFont(f.style or Font.BOLD)
-            FontWeight.BOLD -> jLabel.font = f.deriveFont(f.style and Font.BOLD)
+            FontWeight.NORMAL -> jLabel.font = f.deriveFont(f.style or Font.PLAIN)
+            FontWeight.BOLD -> jLabel.font = f.deriveFont(f.style or Font.BOLD)
             else -> {
             }
         }
