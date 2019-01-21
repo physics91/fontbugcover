@@ -28,7 +28,7 @@ abstract class CoveredLabeled : SwingNode() {
 
     init {
         jLabel.text = text
-        jLabel.background = Color.getColor("#00ffffff")
+        jLabel.background = Color.WHITE
         textSize = 15f
         textStyleForm(textStyle)
         content = jLabel
